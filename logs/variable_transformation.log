@@ -1,0 +1,9 @@
+2026-02-03 10:10:46,471 - INFO - 
+ Columns selected for transformation: ['tenure', 'MonthlyCharges', 'TotalCharges']
+2026-02-03 10:10:46,471 - INFO - Evaluating column: tenure
+2026-02-03 10:10:46,922 - INFO - BEST METHOD for tenure: yeo_johnson
+2026-02-03 10:10:46,926 - INFO - yeo_johnson: 0.4509980357931335
+2026-02-03 10:10:47,287 - INFO - Evaluating column: MonthlyCharges
+2026-02-03 10:10:47,739 - INFO - BEST METHOD for MonthlyCharges: quantile
+2026-02-03 10:10:48,049 - INFO - Evaluating column: TotalCharges
+2026-02-03 10:10:48,443 - INFO - BEST METHOD for TotalCharges: quantile

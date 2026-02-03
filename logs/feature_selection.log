@@ -1,0 +1,19 @@
+2026-02-03 10:10:49,632 - INFO - Feature Selection Started
+2026-02-03 10:10:49,632 - INFO - Train Shape (Before FS): (5634, 4)
+2026-02-03 10:10:49,632 - INFO - Test Shape (Before FS): (1409, 4)
+2026-02-03 10:10:49,633 - INFO - Constant columns removed: ['SeniorCitizen']
+2026-02-03 10:10:49,635 - INFO - Quasi-constant columns removed: []
+2026-02-03 10:10:49,636 - INFO - Running Chi-Square test
+2026-02-03 10:10:49,636 - WARNING - Negative values detected. Skipping Chi-Square.
+2026-02-03 10:10:49,636 - INFO - Before hypothesis testing: (5634, 3)
+2026-02-03 10:10:49,636 - INFO - tenure | p-value = 0.000000
+2026-02-03 10:10:49,637 - INFO - MonthlyCharges | p-value = 0.000000
+2026-02-03 10:10:49,637 - INFO - TotalCharges | p-value = 0.000000
+2026-02-03 10:10:49,637 - INFO - Removed by hypothesis testing: []
+2026-02-03 10:10:49,638 - INFO - ===================================
+2026-02-03 10:10:49,638 - INFO - Feature Selection Completed
+2026-02-03 10:10:49,638 - INFO - ===================================
+2026-02-03 10:10:49,638 - INFO - Train Shape (After FS): (5634, 3)
+2026-02-03 10:10:49,638 - INFO - Test Shape (After FS): (1409, 3)
+2026-02-03 10:10:49,638 - INFO - Final Columns:
+Index(['tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')

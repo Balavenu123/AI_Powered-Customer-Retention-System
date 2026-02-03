@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telecom Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Telecom Customer Churn Prediction</h1>
+    <p>Select your provider and enter details</p>
+
+    <div class="providers">
+        <div class="provider">Jio</div>
+        <div class="provider">Airtel</div>
+        <div class="provider">Vi</div>
+        <div class="provider">BSNL</div>
+    </div>
+</div>
+
+<div class="container">
+
+<form method="POST" action="/predict">
+
+<!-- CUSTOMER INFO -->
+<div class="section">
+    <h2>👤 Customer Info</h2>
+
+    <div class="grid">
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Partner</label>
+            <select name="Partner">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Dependents</label>
+            <select name="Dependents">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Region</label>
+            <select name="Region">
+                <option>North</option>
+                <option>South</option>
+                <option>East</option>
+                <option>West</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+    <h2>📡 Services</h2>
+
+    <div class="grid">
+        <div>
+            <label>Phone Service</label>
+            <select name="PhoneService">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Multiple Lines</label>
+            <select name="MultipleLines">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No phone service</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Internet Service</label>
+            <select name="InternetService">
+                <option>DSL</option>
+                <option>Fiber optic</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Online Security</label>
+            <select name="OnlineSecurity">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Online Backup</label>
+            <select name="OnlineBackup">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Device Protection</label>
+            <select name="DeviceProtection">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Tech Support</label>
+            <select name="TechSupport">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Streaming TV</label>
+            <select name="StreamingTV">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Streaming Movies</label>
+            <select name="StreamingMovies">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- BILLING -->
+<div class="section">
+    <h2>💳 Billing</h2>
+
+    <div class="grid">
+        <div>
+            <label>Tenure (months)</label>
+            <input type="number" name="tenure" required>
+        </div>
+
+        <div>
+            <label>Monthly Charges</label>
+            <input type="number" step="0.01" name="MonthlyCharges" required>
+        </div>
+
+        <div>
+            <label>Total Charges</label>
+            <input type="number" step="0.01" name="TotalCharges" required>
+        </div>
+
+        <div>
+            <label>Contract</label>
+            <select name="Contract">
+                <option>Month-to-month</option>
+                <option>One year</option>
+                <option>Two year</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Paperless Billing</label>
+            <select name="PaperlessBilling">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Payment Method</label>
+            <select name="PaymentMethod">
+                <option>Electronic check</option>
+                <option>Mailed check</option>
+                <option>Credit card (automatic)</option>
+                <option>Bank transfer (automatic)</option>
+            </select>
+        </div>
+
+        <div>
+            <label>SIM Provider</label>
+            <select name="Sim">
+                <option>Jio</option>
+                <option>Airtel</option>
+                <option>Vi</option>
+                <option>BSNL</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<button type="submit" class="predict-btn">Predict Churn</button>
+
+</form>
+
+{% if result %}
+<div class="result">
+    <h2>Prediction: {{ result.prediction }}</h2>
+    <p>Churn Probability: {{ result.probability }}%</p>
+</div>
+{% endif %}
+
+</div>
+</body>
+</html>

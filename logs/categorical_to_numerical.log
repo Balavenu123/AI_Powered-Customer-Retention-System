@@ -1,0 +1,149 @@
+2026-02-03 10:10:49,581 - INFO - Columns before one-hot: ['MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies']
+2026-02-03 10:10:49,581 - INFO - Encoding column: MultipleLines
+2026-02-03 10:10:49,582 - INFO - Unique values in MultipleLines: ['No' 'Yes' 'No phone service']
+2026-02-03 10:10:49,586 - INFO - X_train columns after encoding MultipleLines: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'Sim', 'Region', 'MultipleLines_No phone service',
+       'MultipleLines_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,588 - INFO - X_test columns after encoding MultipleLines: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'Sim', 'Region', 'MultipleLines_No phone service',
+       'MultipleLines_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,588 - INFO - Encoding column: InternetService
+2026-02-03 10:10:49,588 - INFO - Unique values in InternetService: ['DSL' 'Fiber optic' 'No']
+2026-02-03 10:10:49,592 - INFO - X_train columns after encoding InternetService: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'Sim', 'Region', 'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No'],
+      dtype='object')
+2026-02-03 10:10:49,593 - INFO - X_test columns after encoding InternetService: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'Sim', 'Region', 'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No'],
+      dtype='object')
+2026-02-03 10:10:49,593 - INFO - Encoding column: OnlineSecurity
+2026-02-03 10:10:49,594 - INFO - Unique values in OnlineSecurity: ['Yes' 'No' 'No internet service']
+2026-02-03 10:10:49,597 - INFO - X_train columns after encoding OnlineSecurity: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,598 - INFO - X_test columns after encoding OnlineSecurity: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,598 - INFO - Encoding column: OnlineBackup
+2026-02-03 10:10:49,598 - INFO - Unique values in OnlineBackup: ['No' 'Yes' 'No internet service']
+2026-02-03 10:10:49,601 - INFO - X_train columns after encoding OnlineBackup: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,603 - INFO - X_test columns after encoding OnlineBackup: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,603 - INFO - Encoding column: DeviceProtection
+2026-02-03 10:10:49,604 - INFO - Unique values in DeviceProtection: ['Yes' 'No' 'No internet service']
+2026-02-03 10:10:49,607 - INFO - X_train columns after encoding DeviceProtection: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'Sim', 'Region', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,609 - INFO - X_test columns after encoding DeviceProtection: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'Sim', 'Region', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,609 - INFO - Encoding column: TechSupport
+2026-02-03 10:10:49,609 - INFO - Unique values in TechSupport: ['No' 'Yes' 'No internet service']
+2026-02-03 10:10:49,612 - INFO - X_train columns after encoding TechSupport: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'Sim', 'Region', 'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,613 - INFO - X_test columns after encoding TechSupport: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'Sim', 'Region', 'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,614 - INFO - Encoding column: StreamingTV
+2026-02-03 10:10:49,614 - INFO - Unique values in StreamingTV: ['No' 'Yes' 'No internet service']
+2026-02-03 10:10:49,617 - INFO - X_train columns after encoding StreamingTV: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,618 - INFO - X_test columns after encoding StreamingTV: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,618 - INFO - Encoding column: StreamingMovies
+2026-02-03 10:10:49,619 - INFO - Unique values in StreamingMovies: ['Yes' 'No' 'No internet service']
+2026-02-03 10:10:49,622 - INFO - X_train columns after encoding StreamingMovies: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes'],
+      dtype='object')
+2026-02-03 10:10:49,623 - INFO - X_test columns after encoding StreamingMovies: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'Sim', 'Region',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes'],
+      dtype='object')

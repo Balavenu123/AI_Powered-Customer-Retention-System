@@ -1,0 +1,344 @@
+2026-02-03 10:10:46,391 - INFO - data loaded       customerID  gender  SeniorCitizen Partner Dependents  ...  MonthlyCharges TotalCharges Churn     Sim Region
+0     7590-VHVEG  Female              0     Yes         No  ...           29.85        29.85    No    BSNL   East
+1     5575-GNVDE    Male              0      No         No  ...           56.95      1889.50    No    BSNL   West
+2     3668-QPYBK    Male              0      No         No  ...           53.85       108.15   Yes      Vi  North
+3     7795-CFOCW    Male              0      No         No  ...           42.30      1840.75    No    BSNL   East
+4     9237-HQITU  Female              0      No         No  ...           70.70       151.65   Yes  Airtel   East
+...          ...     ...            ...     ...        ...  ...             ...          ...   ...     ...    ...
+7038  6840-RESVB    Male              0     Yes        Yes  ...           84.80      1990.50    No    BSNL   West
+7039  2234-XADUH  Female              0     Yes        Yes  ...          103.20      7362.90    No  Airtel  South
+7040  4801-JZAZL  Female              0     Yes        Yes  ...           29.60       346.45    No      Vi  South
+7041  8361-LTMKD    Male              1     Yes         No  ...           74.40       306.60   Yes  Airtel   East
+7042  3186-AJIEK    Male              0      No         No  ...          105.65      6844.50    No  Airtel   West
+
+[7043 rows x 23 columns]
+2026-02-03 10:10:46,406 - INFO - data loaded       gender  SeniorCitizen Partner Dependents  tenure  ... MonthlyCharges TotalCharges Churn     Sim Region
+0     Female              0     Yes         No       1  ...          29.85        29.85     0    BSNL   East
+1       Male              0      No         No      34  ...          56.95      1889.50     0    BSNL   West
+2       Male              0      No         No       2  ...          53.85       108.15     1      Vi  North
+3       Male              0      No         No      45  ...          42.30      1840.75     0    BSNL   East
+4     Female              0      No         No       2  ...          70.70       151.65     1  Airtel   East
+...      ...            ...     ...        ...     ...  ...            ...          ...   ...     ...    ...
+7038    Male              0     Yes        Yes      24  ...          84.80      1990.50     0    BSNL   West
+7039  Female              0     Yes        Yes      72  ...         103.20      7362.90     0  Airtel  South
+7040  Female              0     Yes        Yes      11  ...          29.60       346.45     0      Vi  South
+7041    Male              1     Yes         No       4  ...          74.40       306.60     1  Airtel   East
+7042    Male              0      No         No      66  ...         105.65      6844.50     0  Airtel   West
+
+[7043 rows x 22 columns]
+2026-02-03 10:10:46,406 - INFO - shape of data :(7043, 22)
+2026-02-03 10:10:46,411 - INFO - null values in the data set :gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        11
+Churn                0
+Sim                  0
+Region               0
+dtype: int64
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,411 - INFO - int64
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,411 - INFO - int64
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,411 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - float64
+2026-02-03 10:10:46,412 - INFO - float64
+2026-02-03 10:10:46,412 - INFO - int64
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,412 - INFO - object
+2026-02-03 10:10:46,413 - INFO - X shape:(7043, 21)
+2026-02-03 10:10:46,413 - INFO - y shape:(7043,)
+2026-02-03 10:10:46,425 - INFO - X :      gender  SeniorCitizen Partner Dependents  ...  MonthlyCharges TotalCharges     Sim Region
+0     Female              0     Yes         No  ...           29.85        29.85    BSNL   East
+1       Male              0      No         No  ...           56.95      1889.50    BSNL   West
+2       Male              0      No         No  ...           53.85       108.15      Vi  North
+3       Male              0      No         No  ...           42.30      1840.75    BSNL   East
+4     Female              0      No         No  ...           70.70       151.65  Airtel   East
+...      ...            ...     ...        ...  ...             ...          ...     ...    ...
+7038    Male              0     Yes        Yes  ...           84.80      1990.50    BSNL   West
+7039  Female              0     Yes        Yes  ...          103.20      7362.90  Airtel  South
+7040  Female              0     Yes        Yes  ...           29.60       346.45      Vi  South
+7041    Male              1     Yes         No  ...           74.40       306.60  Airtel   East
+7042    Male              0      No         No  ...          105.65      6844.50  Airtel   West
+
+[7043 rows x 21 columns]
+2026-02-03 10:10:46,425 - INFO - y :0       0
+1       0
+2       1
+3       0
+4       1
+       ..
+7038    0
+7039    0
+7040    0
+7041    1
+7042    0
+Name: Churn, Length: 7043, dtype: int64
+2026-02-03 10:10:46,428 - INFO - X_train shape:(5634, 21)
+2026-02-03 10:10:46,428 - INFO - X_test shape:(1409, 21)
+2026-02-03 10:10:46,428 - INFO - y_train shape:(5634,)
+2026-02-03 10:10:46,428 - INFO - y_test shape:(1409,)
+2026-02-03 10:10:46,428 - INFO - X_train shape:(5634, 21)
+2026-02-03 10:10:46,428 - INFO - X_test shape:(1409, 21)
+2026-02-03 10:10:46,446 - INFO - X_train shape:(5634, 21)
+2026-02-03 10:10:46,447 - INFO - X_test shape:(1409, 21)
+2026-02-03 10:10:46,457 - INFO - 
+      gender  SeniorCitizen Partner Dependents  ...  MonthlyCharges TotalCharges     Sim Region
+2142  Female              0      No        Yes  ...           64.85      1336.80      Vi  South
+1623  Female              0      No         No  ...           97.20      5129.45     Jio   West
+6074    Male              0     Yes         No  ...           23.45        23.45    BSNL  North
+1362    Male              0      No         No  ...           70.20       237.95     Jio  North
+6754    Male              0      No        Yes  ...           61.90       184.05    BSNL  South
+...      ...            ...     ...        ...  ...             ...          ...     ...    ...
+3772    Male              0     Yes         No  ...           95.00        95.00     Jio   West
+5191  Female              0     Yes        Yes  ...           91.10      2198.30    BSNL   West
+5226    Male              0     Yes        Yes  ...           21.15       306.05  Airtel  North
+5390    Male              1      No         No  ...           99.45      1200.15     Jio   West
+860     Male              0      No         No  ...           19.80       457.30  Airtel   West
+
+[5634 rows x 21 columns]
+2026-02-03 10:10:46,467 - INFO - 
+      gender  SeniorCitizen Partner Dependents  ...  MonthlyCharges TotalCharges     Sim Region
+185   Female              0     Yes         No  ...           24.80        24.80      Vi  North
+2715    Male              0      No         No  ...           25.25       996.45  Airtel   East
+3825  Female              0     Yes        Yes  ...           19.35      1031.70     Jio  South
+1807  Female              0      No         No  ...           76.35        76.35  Airtel  North
+132     Male              0      No         No  ...           50.55      3260.10    BSNL  North
+...      ...            ...     ...        ...  ...             ...          ...     ...    ...
+6366  Female              0     Yes         No  ...           68.30      4378.80      Vi   West
+315     Male              0     Yes        Yes  ...          110.05      5686.40     Jio   West
+2439    Male              0     Yes        Yes  ...           19.90       329.75  Airtel   East
+5002  Female              0     Yes        Yes  ...           43.95      2960.10      Vi   East
+1161    Male              0      No        Yes  ...           31.35        31.35    BSNL  North
+
+[1409 rows x 21 columns]
+2026-02-03 10:10:46,469 - INFO - 
+ X_train_num shape:(5634, 4)
+2026-02-03 10:10:46,469 - INFO - 
+X_test_num shape:(1409, 4)
+2026-02-03 10:10:46,470 - INFO - 
+ X_train_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:46,470 - INFO - X_test_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:48,751 - INFO - 
+ X_train_num shape:(5634, 4)
+2026-02-03 10:10:48,751 - INFO - 
+X_test_num shape:(1409, 4)
+2026-02-03 10:10:48,752 - INFO - 
+ X_train_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:48,753 - INFO - X_test_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:48,753 - INFO - X_train_num shape:(5634, 4)
+2026-02-03 10:10:48,753 - INFO - X_test_num shape:(1409, 4)
+2026-02-03 10:10:48,753 - INFO - X_train_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:48,753 - INFO - X_test_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:49,575 - INFO - 
+ X_train_num shape:(5634, 4)
+2026-02-03 10:10:49,575 - INFO - X_test_num shape:(1409, 4)
+2026-02-03 10:10:49,576 - INFO - X_train_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:49,577 - INFO - X_test_num null values:SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:49,630 - INFO - SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:49,630 - INFO - SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+dtype: int64
+2026-02-03 10:10:49,631 - INFO - gender                                  0
+Partner                                 0
+Dependents                              0
+PhoneService                            0
+Contract                                0
+PaperlessBilling                        0
+PaymentMethod                           0
+Sim                                     0
+Region                                  0
+MultipleLines_No phone service          0
+MultipleLines_Yes                       0
+InternetService_Fiber optic             0
+InternetService_No                      0
+OnlineSecurity_No internet service      0
+OnlineSecurity_Yes                      0
+OnlineBackup_No internet service        0
+OnlineBackup_Yes                        0
+DeviceProtection_No internet service    0
+DeviceProtection_Yes                    0
+TechSupport_No internet service         0
+TechSupport_Yes                         0
+StreamingTV_No internet service         0
+StreamingTV_Yes                         0
+StreamingMovies_No internet service     0
+StreamingMovies_Yes                     0
+dtype: int64
+2026-02-03 10:10:49,632 - INFO - gender                                  0
+Partner                                 0
+Dependents                              0
+PhoneService                            0
+Contract                                0
+PaperlessBilling                        0
+PaymentMethod                           0
+Sim                                     0
+Region                                  0
+MultipleLines_No phone service          0
+MultipleLines_Yes                       0
+InternetService_Fiber optic             0
+InternetService_No                      0
+OnlineSecurity_No internet service      0
+OnlineSecurity_Yes                      0
+OnlineBackup_No internet service        0
+OnlineBackup_Yes                        0
+DeviceProtection_No internet service    0
+DeviceProtection_Yes                    0
+TechSupport_No internet service         0
+TechSupport_Yes                         0
+StreamingTV_No internet service         0
+StreamingTV_Yes                         0
+StreamingMovies_No internet service     0
+StreamingMovies_Yes                     0
+dtype: int64
+2026-02-03 10:10:49,640 - INFO - Training data
+tenure                                  0
+MonthlyCharges                          0
+TotalCharges                            0
+gender                                  0
+Partner                                 0
+Dependents                              0
+PhoneService                            0
+Contract                                0
+PaperlessBilling                        0
+PaymentMethod                           0
+Sim                                     0
+Region                                  0
+MultipleLines_No phone service          0
+MultipleLines_Yes                       0
+InternetService_Fiber optic             0
+InternetService_No                      0
+OnlineSecurity_No internet service      0
+OnlineSecurity_Yes                      0
+OnlineBackup_No internet service        0
+OnlineBackup_Yes                        0
+DeviceProtection_No internet service    0
+DeviceProtection_Yes                    0
+TechSupport_No internet service         0
+TechSupport_Yes                         0
+StreamingTV_No internet service         0
+StreamingTV_Yes                         0
+StreamingMovies_No internet service     0
+StreamingMovies_Yes                     0
+dtype: int64
+2026-02-03 10:10:49,641 - INFO - testing data
+tenure                                  0
+MonthlyCharges                          0
+TotalCharges                            0
+gender                                  0
+Partner                                 0
+Dependents                              0
+PhoneService                            0
+Contract                                0
+PaperlessBilling                        0
+PaymentMethod                           0
+Sim                                     0
+Region                                  0
+MultipleLines_No phone service          0
+MultipleLines_Yes                       0
+InternetService_Fiber optic             0
+InternetService_No                      0
+OnlineSecurity_No internet service      0
+OnlineSecurity_Yes                      0
+OnlineBackup_No internet service        0
+OnlineBackup_Yes                        0
+DeviceProtection_No internet service    0
+DeviceProtection_Yes                    0
+TechSupport_No internet service         0
+TechSupport_Yes                         0
+StreamingTV_No internet service         0
+StreamingTV_Yes                         0
+StreamingMovies_No internet service     0
+StreamingMovies_Yes                     0
+dtype: int64
+2026-02-03 10:10:51,028 - INFO - 
+Index(['tenure', 'MonthlyCharges', 'TotalCharges', 'gender', 'Partner',
+       'Dependents', 'PhoneService', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'Sim', 'Region', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes'],
+      dtype='object')
+Index(['tenure', 'MonthlyCharges', 'TotalCharges', 'gender', 'Partner',
+       'Dependents', 'PhoneService', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'Sim', 'Region', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes'],
+      dtype='object')
+2026-02-03 10:10:51,141 - INFO - (8276, 28)
+2026-02-03 10:10:51,141 - INFO - (1409, 28)
+2026-02-03 10:10:51,141 - INFO - (8276,)
+2026-02-03 10:10:51,141 - INFO - (1409,)

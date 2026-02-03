@@ -1,0 +1,23 @@
+2026-02-03 10:10:48,753 - INFO - 
+ Columns selected for transformation: ['SeniorCitizen', 'MonthlyCharges', 'TotalCharges']
+2026-02-03 10:10:48,754 - INFO - Evaluating column: SeniorCitizen
+2026-02-03 10:10:48,904 - INFO - IQR Remaining outliers: 0
+2026-02-03 10:10:48,904 - INFO - Winsorization Remaining outliers: 906
+2026-02-03 10:10:48,904 - INFO - Quantile Remaining outliers: 906
+2026-02-03 10:10:48,904 - INFO - Z_score Remaining outliers: 906
+2026-02-03 10:10:48,904 - INFO - MAD Remaining outliers: 0
+2026-02-03 10:10:48,904 - INFO - BEST METHOD for SeniorCitizen: IQR
+2026-02-03 10:10:49,040 - INFO - Evaluating column: MonthlyCharges
+2026-02-03 10:10:49,173 - INFO - IQR Remaining outliers: 0
+2026-02-03 10:10:49,173 - INFO - Winsorization Remaining outliers: 0
+2026-02-03 10:10:49,173 - INFO - Quantile Remaining outliers: 0
+2026-02-03 10:10:49,173 - INFO - Z_score Remaining outliers: 39
+2026-02-03 10:10:49,173 - INFO - MAD Remaining outliers: 0
+2026-02-03 10:10:49,173 - INFO - BEST METHOD for MonthlyCharges: IQR
+2026-02-03 10:10:49,304 - INFO - Evaluating column: TotalCharges
+2026-02-03 10:10:49,440 - INFO - IQR Remaining outliers: 0
+2026-02-03 10:10:49,440 - INFO - Winsorization Remaining outliers: 0
+2026-02-03 10:10:49,440 - INFO - Quantile Remaining outliers: 0
+2026-02-03 10:10:49,440 - INFO - Z_score Remaining outliers: 37
+2026-02-03 10:10:49,440 - INFO - MAD Remaining outliers: 0
+2026-02-03 10:10:49,440 - INFO - BEST METHOD for TotalCharges: IQR
